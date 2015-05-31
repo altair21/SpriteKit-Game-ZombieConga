@@ -14,10 +14,14 @@ class GameScene: SKScene {
     let enemyCollisionSound: SKAction = SKAction.playSoundFileNamed("hitCatLady.wav", waitForCompletion: false)
     var invincible = false
     var catMovePointsPerSec: CGFloat = 480.0
-    var lives = 5
+    var lives = 5          //生命值
+    var cats = 0
     var gameOver = false
     let backgroundMovePointPerSec: CGFloat = 200.0
     let backgroundLayer = SKNode()
+    
+    let livesLabel: SKLabelNode = SKLabelNode(fontNamed: "DamascusBold")
+    let catLabel: SKLabelNode = SKLabelNode(fontNamed: "DamascusBold")
     
     override init(size: CGSize) {
         let maxAspectRatio: CGFloat = 16.0 / 9.0
@@ -53,12 +57,13 @@ class GameScene: SKScene {
             backgroundLayer.addChild(background)
         }
         
+        setLabels()
         
         zombie.position = CGPoint(x: 400, y: 400)
         zombie.zPosition = 100
         backgroundLayer.addChild(zombie)
         
-        debugDrawPlayableArea()
+        //debugDrawPlayableArea()
         
         runAction(SKAction.repeatActionForever(SKAction.sequence([
             SKAction.runBlock(spawnEnemy),
@@ -78,6 +83,9 @@ class GameScene: SKScene {
     }
     
     override func update(currentTime: NSTimeInterval) {
+        livesLabel.text = "HP: \(lives)"
+        catLabel.text = "cats: \(cats)"
+        
         if lastUpdateTime > 0 {
             dt = currentTime - lastUpdateTime
         }   else {
@@ -245,6 +253,8 @@ class GameScene: SKScene {
     func zombieHitEnemy(enemy: SKSpriteNode) {
         runAction(enemyCollisionSound)
         
+        enemy.removeFromParent()
+        
         loseCats()
         lives--
         
@@ -284,7 +294,7 @@ class GameScene: SKScene {
         var hitEnemies: [SKSpriteNode] = []
         backgroundLayer.enumerateChildNodesWithName("enemy", usingBlock: {node, _ in
             let enemy = node as! SKSpriteNode
-            if CGRectIntersectsRect(CGRectInset(node.frame, 20, 20), self.zombie.frame) {
+            if CGRectIntersectsRect(CGRectInset(node.frame, node.frame.size.width / 2, node.frame.size.height / 2), self.zombie.frame) {
                 hitEnemies.append(enemy)
             }
         })
@@ -312,6 +322,8 @@ class GameScene: SKScene {
             }
             targetPosition = node.position
         }
+        
+        self.cats = trainCount
         
         if trainCount >= 30 && !gameOver {
             gameOver = true
@@ -380,6 +392,22 @@ class GameScene: SKScene {
                 background.position = CGPoint(x: background.position.x + background.size.width * 2, y: background.position.y)
             }
         })
+    }
+    
+    func setLabels() {
+        livesLabel.zPosition = 200
+        livesLabel.fontSize = 60
+        livesLabel.fontColor = SKColor.redColor()
+        livesLabel.text = "HP: \(lives)"
+        livesLabel.position = CGPoint(x: livesLabel.frame.size.width / 2 + 40, y: CGRectGetMinY(playableRect) + 40)
+        self.addChild(livesLabel)
+        
+        catLabel.zPosition = 200
+        catLabel.fontSize = 60
+        catLabel.fontColor = SKColor.blueColor()
+        catLabel.text = "cats: \(cats)"
+        catLabel.position = CGPoint(x: catLabel.frame.size.width / 2 + 40, y: CGRectGetMaxY(playableRect) - catLabel.frame.size.height - 40)
+        self.addChild(catLabel)
     }
     
 }
