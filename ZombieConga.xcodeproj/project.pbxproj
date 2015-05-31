@@ -28,6 +28,25 @@
 		5054222A1B1A44E40066D489 /* hitCatLady.wav in Resources */ = {isa = PBXBuildFile; fileRef = 505422251B1A44E40066D489 /* hitCatLady.wav */; };
 		5054222B1B1A44E40066D489 /* lose.wav in Resources */ = {isa = PBXBuildFile; fileRef = 505422261B1A44E40066D489 /* lose.wav */; };
 		5054222C1B1A44E40066D489 /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 505422271B1A44E40066D489 /* win.wav */; };
+		50C6AB2B1B1B7E3B00E7423C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C6AB2A1B1B7E3B00E7423C /* AppDelegate.swift */; };
+		50C6AB341B1B7E3B00E7423C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50C6AB321B1B7E3B00E7423C /* MainMenu.xib */; };
+		50C6AB401B1B7E3B00E7423C /* ZombieCongaMacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C6AB3F1B1B7E3B00E7423C /* ZombieCongaMacTests.swift */; };
+		50C6AB481B1B7EB200E7423C /* backgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 505422231B1A44E40066D489 /* backgroundMusic.mp3 */; };
+		50C6AB491B1B7EB200E7423C /* hitCat.wav in Resources */ = {isa = PBXBuildFile; fileRef = 505422241B1A44E40066D489 /* hitCat.wav */; };
+		50C6AB4A1B1B7EB200E7423C /* hitCatLady.wav in Resources */ = {isa = PBXBuildFile; fileRef = 505422251B1A44E40066D489 /* hitCatLady.wav */; };
+		50C6AB4B1B1B7EB200E7423C /* lose.wav in Resources */ = {isa = PBXBuildFile; fileRef = 505422261B1A44E40066D489 /* lose.wav */; };
+		50C6AB4C1B1B7EB200E7423C /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 505422271B1A44E40066D489 /* win.wav */; };
+		50C6AB4D1B1B7EB600E7423C /* background1.png in Resources */ = {isa = PBXBuildFile; fileRef = 503FA6C81B18AC5F00E7F872 /* background1.png */; };
+		50C6AB4E1B1B7EB600E7423C /* background2.png in Resources */ = {isa = PBXBuildFile; fileRef = 503FA6C91B18AC5F00E7F872 /* background2.png */; };
+		50C6AB4F1B1B7EB600E7423C /* MainMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 503FA6CA1B18AC5F00E7F872 /* MainMenu.png */; };
+		50C6AB501B1B7EB600E7423C /* YouLose.png in Resources */ = {isa = PBXBuildFile; fileRef = 503FA6CB1B18AC5F00E7F872 /* YouLose.png */; };
+		50C6AB511B1B7EB600E7423C /* YouWin.png in Resources */ = {isa = PBXBuildFile; fileRef = 503FA6CC1B18AC5F00E7F872 /* YouWin.png */; };
+		50C6AB521B1B7EBA00E7423C /* sprites.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 503FA6CD1B18AC5F00E7F872 /* sprites.atlas */; };
+		50C6AB531B1B7EC700E7423C /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503FA6A71B1899C400E7F872 /* GameScene.swift */; };
+		50C6AB541B1B7EC700E7423C /* MainMenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502321B81B1B0EC300A744C4 /* MainMenuScene.swift */; };
+		50C6AB551B1B7EC700E7423C /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502321B61B1AF69800A744C4 /* GameOverScene.swift */; };
+		50C6AB561B1B7EC700E7423C /* MyUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501D2CD51B1974C800EB3454 /* MyUtils.swift */; };
+		50C6AB571B1B7EC900E7423C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 503FA6AE1B1899C400E7F872 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,19 +57,26 @@
 			remoteGlobalIDString = 503FA69D1B1899C400E7F872;
 			remoteInfo = ZombieConga;
 		};
+		50C6AB3A1B1B7E3B00E7423C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 503FA6961B1899C400E7F872 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50C6AB251B1B7E3B00E7423C;
+			remoteInfo = ZombieCongaMac;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		501D2CD51B1974C800EB3454 /* MyUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyUtils.swift; sourceTree = "<group>"; };
-		502321B61B1AF69800A744C4 /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
-		502321B81B1B0EC300A744C4 /* MainMenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenuScene.swift; sourceTree = "<group>"; };
+		501D2CD51B1974C800EB3454 /* MyUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyUtils.swift; path = ZombieConga/MyUtils.swift; sourceTree = "<group>"; };
+		502321B61B1AF69800A744C4 /* GameOverScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameOverScene.swift; path = ZombieConga/GameOverScene.swift; sourceTree = "<group>"; };
+		502321B81B1B0EC300A744C4 /* MainMenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainMenuScene.swift; path = ZombieConga/MainMenuScene.swift; sourceTree = "<group>"; };
 		503FA69E1B1899C400E7F872 /* ZombieConga.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZombieConga.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		503FA6A21B1899C400E7F872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		503FA6A31B1899C400E7F872 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		503FA6A71B1899C400E7F872 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		503FA6A71B1899C400E7F872 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GameScene.swift; path = ZombieConga/GameScene.swift; sourceTree = "<group>"; };
 		503FA6A91B1899C400E7F872 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		503FA6AC1B1899C400E7F872 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		503FA6AE1B1899C400E7F872 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		503FA6AE1B1899C400E7F872 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ZombieConga/Images.xcassets; sourceTree = "<group>"; };
 		503FA6B11B1899C400E7F872 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		503FA6B71B1899C400E7F872 /* ZombieCongaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZombieCongaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		503FA6BC1B1899C400E7F872 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,12 +86,19 @@
 		503FA6CA1B18AC5F00E7F872 /* MainMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainMenu.png; sourceTree = "<group>"; };
 		503FA6CB1B18AC5F00E7F872 /* YouLose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YouLose.png; sourceTree = "<group>"; };
 		503FA6CC1B18AC5F00E7F872 /* YouWin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = YouWin.png; sourceTree = "<group>"; };
-		503FA6CD1B18AC5F00E7F872 /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = sprites.atlas; sourceTree = "<group>"; };
+		503FA6CD1B18AC5F00E7F872 /* sprites.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; name = sprites.atlas; path = ZombieConga/sprites.atlas; sourceTree = "<group>"; };
 		505422231B1A44E40066D489 /* backgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusic.mp3; sourceTree = "<group>"; };
 		505422241B1A44E40066D489 /* hitCat.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hitCat.wav; sourceTree = "<group>"; };
 		505422251B1A44E40066D489 /* hitCatLady.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hitCatLady.wav; sourceTree = "<group>"; };
 		505422261B1A44E40066D489 /* lose.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = lose.wav; sourceTree = "<group>"; };
 		505422271B1A44E40066D489 /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = win.wav; sourceTree = "<group>"; };
+		50C6AB261B1B7E3B00E7423C /* ZombieCongaMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZombieCongaMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C6AB291B1B7E3B00E7423C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50C6AB2A1B1B7E3B00E7423C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		50C6AB331B1B7E3B00E7423C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		50C6AB391B1B7E3B00E7423C /* ZombieCongaMacTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZombieCongaMacTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50C6AB3E1B1B7E3B00E7423C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50C6AB3F1B1B7E3B00E7423C /* ZombieCongaMacTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZombieCongaMacTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,14 +116,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		50C6AB231B1B7E3B00E7423C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C6AB361B1B7E3B00E7423C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		503FA6951B1899C400E7F872 = {
 			isa = PBXGroup;
 			children = (
+				50C6AB471B1B7E8100E7423C /* Shared */,
 				503FA6A01B1899C400E7F872 /* ZombieConga */,
 				503FA6BA1B1899C400E7F872 /* ZombieCongaTests */,
+				50C6AB271B1B7E3B00E7423C /* ZombieCongaMac */,
+				50C6AB3C1B1B7E3B00E7423C /* ZombieCongaMacTests */,
 				503FA69F1B1899C400E7F872 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,6 +150,8 @@
 			children = (
 				503FA69E1B1899C400E7F872 /* ZombieConga.app */,
 				503FA6B71B1899C400E7F872 /* ZombieCongaTests.xctest */,
+				50C6AB261B1B7E3B00E7423C /* ZombieCongaMac.app */,
+				50C6AB391B1B7E3B00E7423C /* ZombieCongaMacTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -107,17 +159,9 @@
 		503FA6A01B1899C400E7F872 /* ZombieConga */ = {
 			isa = PBXGroup;
 			children = (
-				505422221B1A44E40066D489 /* Sounds */,
-				503FA6C71B18AC5F00E7F872 /* Images */,
-				503FA6CD1B18AC5F00E7F872 /* sprites.atlas */,
 				503FA6A31B1899C400E7F872 /* AppDelegate.swift */,
-				503FA6A71B1899C400E7F872 /* GameScene.swift */,
-				502321B81B1B0EC300A744C4 /* MainMenuScene.swift */,
-				502321B61B1AF69800A744C4 /* GameOverScene.swift */,
-				501D2CD51B1974C800EB3454 /* MyUtils.swift */,
 				503FA6A91B1899C400E7F872 /* GameViewController.swift */,
 				503FA6AB1B1899C400E7F872 /* Main.storyboard */,
-				503FA6AE1B1899C400E7F872 /* Images.xcassets */,
 				503FA6B01B1899C400E7F872 /* LaunchScreen.xib */,
 				503FA6A11B1899C400E7F872 /* Supporting Files */,
 			);
@@ -158,7 +202,8 @@
 				503FA6CB1B18AC5F00E7F872 /* YouLose.png */,
 				503FA6CC1B18AC5F00E7F872 /* YouWin.png */,
 			);
-			path = Images;
+			name = Images;
+			path = ZombieConga/Images;
 			sourceTree = "<group>";
 		};
 		505422221B1A44E40066D489 /* Sounds */ = {
@@ -170,7 +215,58 @@
 				505422261B1A44E40066D489 /* lose.wav */,
 				505422271B1A44E40066D489 /* win.wav */,
 			);
-			path = Sounds;
+			name = Sounds;
+			path = ZombieConga/Sounds;
+			sourceTree = "<group>";
+		};
+		50C6AB271B1B7E3B00E7423C /* ZombieCongaMac */ = {
+			isa = PBXGroup;
+			children = (
+				50C6AB2A1B1B7E3B00E7423C /* AppDelegate.swift */,
+				50C6AB321B1B7E3B00E7423C /* MainMenu.xib */,
+				50C6AB281B1B7E3B00E7423C /* Supporting Files */,
+			);
+			path = ZombieCongaMac;
+			sourceTree = "<group>";
+		};
+		50C6AB281B1B7E3B00E7423C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50C6AB291B1B7E3B00E7423C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50C6AB3C1B1B7E3B00E7423C /* ZombieCongaMacTests */ = {
+			isa = PBXGroup;
+			children = (
+				50C6AB3F1B1B7E3B00E7423C /* ZombieCongaMacTests.swift */,
+				50C6AB3D1B1B7E3B00E7423C /* Supporting Files */,
+			);
+			path = ZombieCongaMacTests;
+			sourceTree = "<group>";
+		};
+		50C6AB3D1B1B7E3B00E7423C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50C6AB3E1B1B7E3B00E7423C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50C6AB471B1B7E8100E7423C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				505422221B1A44E40066D489 /* Sounds */,
+				503FA6C71B18AC5F00E7F872 /* Images */,
+				503FA6CD1B18AC5F00E7F872 /* sprites.atlas */,
+				503FA6A71B1899C400E7F872 /* GameScene.swift */,
+				502321B81B1B0EC300A744C4 /* MainMenuScene.swift */,
+				502321B61B1AF69800A744C4 /* GameOverScene.swift */,
+				501D2CD51B1974C800EB3454 /* MyUtils.swift */,
+				503FA6AE1B1899C400E7F872 /* Images.xcassets */,
+			);
+			name = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +307,41 @@
 			productReference = 503FA6B71B1899C400E7F872 /* ZombieCongaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		50C6AB251B1B7E3B00E7423C /* ZombieCongaMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50C6AB451B1B7E3B00E7423C /* Build configuration list for PBXNativeTarget "ZombieCongaMac" */;
+			buildPhases = (
+				50C6AB221B1B7E3B00E7423C /* Sources */,
+				50C6AB231B1B7E3B00E7423C /* Frameworks */,
+				50C6AB241B1B7E3B00E7423C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZombieCongaMac;
+			productName = ZombieCongaMac;
+			productReference = 50C6AB261B1B7E3B00E7423C /* ZombieCongaMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50C6AB381B1B7E3B00E7423C /* ZombieCongaMacTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50C6AB461B1B7E3B00E7423C /* Build configuration list for PBXNativeTarget "ZombieCongaMacTests" */;
+			buildPhases = (
+				50C6AB351B1B7E3B00E7423C /* Sources */,
+				50C6AB361B1B7E3B00E7423C /* Frameworks */,
+				50C6AB371B1B7E3B00E7423C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50C6AB3B1B1B7E3B00E7423C /* PBXTargetDependency */,
+			);
+			name = ZombieCongaMacTests;
+			productName = ZombieCongaMacTests;
+			productReference = 50C6AB391B1B7E3B00E7423C /* ZombieCongaMacTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -226,6 +357,13 @@
 					503FA6B61B1899C400E7F872 = {
 						CreatedOnToolsVersion = 6.3.2;
 						TestTargetID = 503FA69D1B1899C400E7F872;
+					};
+					50C6AB251B1B7E3B00E7423C = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+					50C6AB381B1B7E3B00E7423C = {
+						CreatedOnToolsVersion = 6.3.2;
+						TestTargetID = 50C6AB251B1B7E3B00E7423C;
 					};
 				};
 			};
@@ -244,6 +382,8 @@
 			targets = (
 				503FA69D1B1899C400E7F872 /* ZombieConga */,
 				503FA6B61B1899C400E7F872 /* ZombieCongaTests */,
+				50C6AB251B1B7E3B00E7423C /* ZombieCongaMac */,
+				50C6AB381B1B7E3B00E7423C /* ZombieCongaMacTests */,
 			);
 		};
 /* End PBXProject section */
@@ -277,6 +417,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		50C6AB241B1B7E3B00E7423C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C6AB521B1B7EBA00E7423C /* sprites.atlas in Resources */,
+				50C6AB4D1B1B7EB600E7423C /* background1.png in Resources */,
+				50C6AB501B1B7EB600E7423C /* YouLose.png in Resources */,
+				50C6AB4E1B1B7EB600E7423C /* background2.png in Resources */,
+				50C6AB4C1B1B7EB200E7423C /* win.wav in Resources */,
+				50C6AB571B1B7EC900E7423C /* Images.xcassets in Resources */,
+				50C6AB491B1B7EB200E7423C /* hitCat.wav in Resources */,
+				50C6AB4F1B1B7EB600E7423C /* MainMenu.png in Resources */,
+				50C6AB511B1B7EB600E7423C /* YouWin.png in Resources */,
+				50C6AB4B1B1B7EB200E7423C /* lose.wav in Resources */,
+				50C6AB4A1B1B7EB200E7423C /* hitCatLady.wav in Resources */,
+				50C6AB481B1B7EB200E7423C /* backgroundMusic.mp3 in Resources */,
+				50C6AB341B1B7E3B00E7423C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C6AB371B1B7E3B00E7423C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -301,6 +468,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		50C6AB221B1B7E3B00E7423C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C6AB551B1B7EC700E7423C /* GameOverScene.swift in Sources */,
+				50C6AB561B1B7EC700E7423C /* MyUtils.swift in Sources */,
+				50C6AB531B1B7EC700E7423C /* GameScene.swift in Sources */,
+				50C6AB541B1B7EC700E7423C /* MainMenuScene.swift in Sources */,
+				50C6AB2B1B1B7E3B00E7423C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50C6AB351B1B7E3B00E7423C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C6AB401B1B7E3B00E7423C /* ZombieCongaMacTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -308,6 +495,11 @@
 			isa = PBXTargetDependency;
 			target = 503FA69D1B1899C400E7F872 /* ZombieConga */;
 			targetProxy = 503FA6B81B1899C400E7F872 /* PBXContainerItemProxy */;
+		};
+		50C6AB3B1B1B7E3B00E7423C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50C6AB251B1B7E3B00E7423C /* ZombieCongaMac */;
+			targetProxy = 50C6AB3A1B1B7E3B00E7423C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -326,6 +518,14 @@
 				503FA6B11B1899C400E7F872 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		50C6AB321B1B7E3B00E7423C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50C6AB331B1B7E3B00E7423C /* Base */,
+			);
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -470,6 +670,80 @@
 			};
 			name = Release;
 		};
+		50C6AB411B1B7E3B00E7423C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ZombieCongaMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		50C6AB421B1B7E3B00E7423C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = ZombieCongaMac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		50C6AB431B1B7E3B00E7423C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ZombieCongaMacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZombieCongaMac.app/Contents/MacOS/ZombieCongaMac";
+			};
+			name = Debug;
+		};
+		50C6AB441B1B7E3B00E7423C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ZombieCongaMacTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZombieCongaMac.app/Contents/MacOS/ZombieCongaMac";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -499,6 +773,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		50C6AB451B1B7E3B00E7423C /* Build configuration list for PBXNativeTarget "ZombieCongaMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C6AB411B1B7E3B00E7423C /* Debug */,
+				50C6AB421B1B7E3B00E7423C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		50C6AB461B1B7E3B00E7423C /* Build configuration list for PBXNativeTarget "ZombieCongaMacTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50C6AB431B1B7E3B00E7423C /* Debug */,
+				50C6AB441B1B7E3B00E7423C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,4 +1,5 @@
 import SpriteKit
+import Foundation
 
 class GameScene: SKScene {
     let zombie = SKSpriteNode(imageNamed: "zombie1")
@@ -140,6 +141,7 @@ class GameScene: SKScene {
         moveZombieToward(touchLocation)
     }
     
+    #if os(iOS)
     override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
         let nsset = touches as NSSet
         let touch = nsset.anyObject() as! UITouch
@@ -153,6 +155,17 @@ class GameScene: SKScene {
         let touchLocation = touch.locationInNode(backgroundLayer)
         sceneTouched(touchLocation)
     }
+    #else
+    override func mouseDown(theEvent: NSEvent) {
+        let touchLocation = theEvent.locationInNode(backgroundLayer)
+        sceneTouched(touchLocation)
+    }
+    
+    override func mouseDragged(theEvent: NSEvent) {
+        let touchLocation = theEvent.locationInNode(backgroundLayer)
+        sceneTouched(touchLocation)
+    }
+    #endif
     
     func boundsCheckZombie() {
         let bottomLeft = backgroundLayer.convertPoint(CGPoint(x: 0, y: CGRectGetMinY(playableRect)), fromNode: self)
