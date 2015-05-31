@@ -43,16 +43,13 @@ class GameScene: SKScene {
         backgroundColor = SKColor.whiteColor()
         let background = SKSpriteNode(imageNamed: "background1")
         background.position = CGPoint(x: size.width / 2, y: size.height / 2)
-//        background.zRotation = CGFloat(M_PI) / 8
         background.zPosition = -1
         addChild(background)
         
         zombie.position = CGPoint(x: 400, y: 400)
         zombie.zPosition = 100
         addChild(zombie)
-//        zombie.runAction(SKAction.repeatActionForever(zombieAnimation))
         
-//        zombie.setScale(2.0)
 //        debugDrawPlayableArea()
         
         runAction(SKAction.repeatActionForever(SKAction.sequence([
