@@ -348,11 +348,13 @@
 		503FA6961B1899C400E7F872 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = altair21;
 				TargetAttributes = {
 					503FA69D1B1899C400E7F872 = {
 						CreatedOnToolsVersion = 6.3.2;
+						DevelopmentTeam = X72NNDN3GJ;
 					};
 					503FA6B61B1899C400E7F872 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -618,6 +620,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ZombieConga/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -629,6 +632,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ZombieConga/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -781,6 +785,7 @@
 				50C6AB421B1B7E3B00E7423C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		50C6AB461B1B7E3B00E7423C /* Build configuration list for PBXNativeTarget "ZombieCongaMacTests" */ = {
 			isa = XCConfigurationList;
@@ -789,6 +794,7 @@
 				50C6AB441B1B7E3B00E7423C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

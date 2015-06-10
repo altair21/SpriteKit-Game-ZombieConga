@@ -107,7 +107,7 @@ extension CGFloat {
         return CGFloat(Float(arc4random()) / Float(UInt32.max))
     }
     
-    static func random(#min: CGFloat, max: CGFloat) -> CGFloat {
+    static func random(min min: CGFloat, max: CGFloat) -> CGFloat {
         assert(min < max)
         return CGFloat.random() * (max - min) + min
     }
@@ -120,14 +120,19 @@ var backgroundMusicPlayer: AVAudioPlayer!
 func playBackgroundMusic(filename: String) {
     let url = NSBundle.mainBundle().URLForResource(filename, withExtension: nil)
     if url == nil {
-        println("Could not find file: \(filename)")
+        print("Could not find file: \(filename)")
         return
     }
     
     var error: NSError? = nil
-    backgroundMusicPlayer = AVAudioPlayer(contentsOfURL: url, error: &error)
+    do {
+        backgroundMusicPlayer = try AVAudioPlayer(contentsOfURL: url!)
+    } catch var error1 as NSError {
+        error = error1
+        backgroundMusicPlayer = nil
+    }
     if backgroundMusicPlayer == nil {
-        println("Could not create audio player: \(error!)")
+        print("Could not create audio player: \(error!)")
         return
     }
     backgroundMusicPlayer.numberOfLoops = -1

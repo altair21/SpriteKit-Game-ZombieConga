@@ -114,7 +114,7 @@ class GameScene: SKScene {
         
         if lives <= 0 && !gameOver {
             gameOver = true
-            println("You lose!")
+            print("You lose!")
             backgroundMusicPlayer.stop()
             let gameOverScene = GameOverScene(size: size, won: false)
             gameOverScene.scaleMode = scaleMode
@@ -142,14 +142,14 @@ class GameScene: SKScene {
     }
     
     #if os(iOS)
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         let nsset = touches as NSSet
         let touch = nsset.anyObject() as! UITouch
         let touchLocation = touch.locationInNode(backgroundLayer)
         sceneTouched(touchLocation)
     }
     
-    override func touchesMoved(touches: Set<NSObject>, withEvent event: UIEvent) {
+    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
         let nsset = touches as NSSet
         let touch = nsset.anyObject() as! UITouch
         let touchLocation = touch.locationInNode(backgroundLayer)
@@ -200,7 +200,7 @@ class GameScene: SKScene {
     }
     
     func rotateSprite(sprite: SKSpriteNode, direction: CGPoint, rotateRadiansPerSec: CGFloat) {
-        let shortest = shortestAngleBetween(sprite.zRotation, velocity.angle)
+        let shortest = shortestAngleBetween(sprite.zRotation, angle2: velocity.angle)
         let amountToRotate = min(rotateRadiansPerSec * CGFloat(dt), abs(shortest))
         sprite.zRotation += shortest.sign() * amountToRotate
     }
@@ -340,7 +340,7 @@ class GameScene: SKScene {
         
         if trainCount >= 30 && !gameOver {
             gameOver = true
-            println("You win!")
+            print("You win!")
             backgroundMusicPlayer.stop()
             let gameOverScene = GameOverScene(size: size, won: true)
             gameOverScene.scaleMode = scaleMode
